@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Tabel Makanan Favorit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        pre {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .tip {
+            background-color: #e8f4f8;
+            padding: 10px;
+            border-left: 4px solid #2980b9;
+            margin: 10px 0;
+        }
+        .example-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .example-table th, .example-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .example-table th {
+            background-color: #f2f2f2;
+        }
+        .example-table img {
+            width: 80px;
+            height: auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Membuat Tabel Makanan Favorit dengan HTML</h1>
+        <p>Ingin membuat website sederhana yang menampilkan daftar makanan favorit dengan gambar dan harga? Ikuti panduan ini! Dibuat mudah untuk pemula.</p>
+
+        <h2>Langkah 1: Buat Struktur Dasar HTML</h2>
+        <p>Mulai dengan membuat file HTML. Simpan dengan nama, misalnya <code>tabel_makanan.html</code>. Tulis kode dasar ini:</p>
+        <pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Tabel Makanan Favorit&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Tabel akan ditulis di sini --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <p><strong>Penjelasan:</strong></p>
+        <ul>
+            <li><code>&lt;html&gt;</code>: Wadah utama kode HTML.</li>
+            <li><code>&lt;head&gt;</code>: Berisi judul halaman (<code>&lt;title&gt;</code>).</li>
+            <li><code>&lt;body&gt;</code>: Tempat konten seperti tabel ditulis.</li>
+        </ul>
+
+        <h2>Langkah 2: Tambahkan Tabel</h2>
+        <p>Gunakan tag <code>&lt;table&gt;</code> untuk membuat tabel. Tambahkan baris (<code>&lt;tr&gt;</code>), judul kolom (<code>&lt;th&gt;</code>), dan data (<code>&lt;td&gt;</code>).</p>
+        <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nama Makanan&lt;/th&gt;
+        &lt;th&gt;Gambar&lt;/th&gt;
+        &lt;th&gt;Harga&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Nasi Goreng&lt;/td&gt;
+        &lt;td&gt;&lt;img src="link_gambar" alt="Nasi Goreng"&gt;&lt;/td&gt;
+        &lt;td&gt;Rp 25.000&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        <p><strong>Penjelasan:</strong></p>
+        <ul>
+            <li><code>&lt;table&gt;</code>: Membuat tabel.</li>
+            <li><code>&lt;tr&gt;</code>: Membuat baris.</li>
+            <li><code>&lt;th&gt;</code>: Judul kolom (tebal).</li>
+            <li><code>&lt;td&gt;</code>: Data dalam kolom.</li>
+            <li><code>&lt;img&gt;</code>: Menampilkan gambar dengan link (<code>src</code>) dan deskripsi (<code>alt</code>).</li>
+        </ul>
+
+        <h2>Langkah 3: Tambahkan Gambar</h2>
+        <p>Gunakan tag <code>&lt;img&gt;</code> dengan link gambar. Contoh link placeholder: <code>https://via.placeholder.com/100?text=Nasi+Goreng</code>. Jika punya gambar sendiri, simpan di folder yang sama dan tulis nama file, misalnya <code>nasigoreng.jpg</code>.</p>
+
+        <h2>Langkah 4: Tambahkan Style dengan CSS</h2>
+        <p>Agar tabel terlihat rapi, tambahkan CSS di dalam <code>&lt;head&gt;</code>:</p>
+        <pre><code>&lt;style&gt;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    img {
+        width: 100px;
+    }
+&lt;/style&gt;</code></pre>
+        <p><strong>Penjelasan:</strong></p>
+        <ul>
+            <li><code>width: 100%</code>: Tabel selebar halaman.</li>
+            <li><code>border-collapse: collapse</code>: Menyatukan garis tabel.</li>
+            <li><code>border: 1px solid #ddd</code>: Garis tepi tabel.</li>
+            <li><code>padding: 8px</code>: Jarak dalam sel.</li>
+            <li><code>background-color: #f2f2f2</code>: Warna abu-abu untuk judul.</li>
+            <li><code>img { width: 100px }</code>: Atur lebar gambar.</li>
+        </ul>
+
+        <h2>Contoh Hasil Tabel</h2>
+        <table class="example-table">
+            <tr>
+                <th>Nama Makanan</th>
+                <th>Gambar</th>
+                <th>Harga</th>
+            </tr>
+            <tr>
+                <td>Nasi Goreng</td>
+                <td><img src="https://via.placeholder.com/100?text=Nasi+Goreng" alt="Nasi Goreng"></td>
+                <td>Rp 25.000</td>
+            </tr>
+            <tr>
+                <td>Sate Ayam</td>
+                <td><img src="https://via.placeholder.com/100?text=Sate+Ayam" alt="Sate Ayam"></td>
+                <td>Rp 30.000</td>
+            </tr>
+        </table>
+
+        <h2>Langkah 5: Jalankan Website</h2>
+        <ol>
+            <li>Simpan kode dalam file dengan akhiran <code>.html</code>, misalnya <code>tabel_makanan.html</code>.</li>
+            <li>Buka file di browser (Chrome, Firefox, dll.) dengan double-click.</li>
+            <li>Lihat tabel dengan nama makanan, gambar, dan harga.</li>
+        </ol>
+
+        <div class="tip">
+            <p><strong>Tips untuk Pemula:</strong></p>
+            <ul>
+                <li>Ganti teks, harga, atau link gambar sesuai keinginan.</li>
+                <li>Tambah baris (<code>&lt;tr&gt;</code>) untuk makanan lain.</li>
+                <li>Jika gambar tidak muncul, periksa link atau letak file gambar.</li>
+                <li>Simpan perubahan dan refresh browser untuk melihat hasil.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
